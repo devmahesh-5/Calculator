@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body><div class="calculator">
+    <div id="screen" class="screen">0</div>
+    <div class="button-container">
+        <button onclick="clearScreen()" class="special">AC</button>
+        <button onclick="appendNum('/')">/</button>
+        <button onclick="appendNum('*')">*</button>
+        <button onclick="appendNum('-')">-</button>
+
+        <button onclick="appendNum(7)">7</button>
+        <button onclick="appendNum(8)">8</button>
+        <button onclick="appendNum(9)">9</button>
+        <button onclick="appendNum('+')">+</button>
+
+        <button onclick="appendNum(4)">4</button>
+        <button onclick="appendNum(5)">5</button>
+        <button onclick="appendNum(6)">6</button>
+        <button onclick="calculate()" style="grid-row: span 2; background-color: orange;">=</button>
+
+        <button onclick="appendNum(1)">1</button>
+        <button onclick="appendNum(2)">2</button>
+        <button onclick="appendNum(3)">3</button>
+
+        <button onclick="appendNum(0)" style="grid-column: span 2;">0</button>
+        <button onclick="appendNum('.')">.</button>
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
